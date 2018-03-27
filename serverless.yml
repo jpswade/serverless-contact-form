@@ -10,11 +10,11 @@ service: serverless-contact-form
 # The `provider` block defines where your service will be deployed
 provider:
   name: aws
-  region: us-west-2
+  region: eu-west-1
   runtime: nodejs6.10
   iamRoleStatements:
     -  Effect: "Allow"
-       Action: 
+       Action:
          - "ses:SendEmail"
          - "ses:SendRawEmail"
        Resource: "*"
@@ -29,3 +29,6 @@ functions:
           path: contact
           method: post
           cors: true
+
+plugins:
+  - serverless-offline

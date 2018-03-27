@@ -1,13 +1,21 @@
 {
-    "name": "lamdba-contact-form",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/cowholio4/lambda-contact-form.git"
-    },
-    "dependencies": {
-	"aws-sdk" : "^2.60.0",
-        "nodemailer": "^4.0.1",
-        "nodemailer-ses-transport": "^1.5.1",
-        "qs" : "^6.4.0"
-    }
+  "name": "lamdba-contact-form",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cowholio4/lambda-contact-form.git"
+  },
+  "scripts": {
+    "test": "sh test.sh",
+    "offline": "AWS_REGION=eu-west-1 sls offline start --stage dev",
+    "build": "sh build.sh"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.60.0",
+    "nodemailer": "^4.0.1",
+    "nodemailer-ses-transport": "^1.5.1",
+    "qs": "^6.5.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.18.0"
+  }
 }
