@@ -2,7 +2,7 @@
   "name": "lamdba-contact-form",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cowholio4/lambda-contact-form.git"
+    "url": "git://bitbucket.org/jpswade/lambda-contact-form.git"
   },
   "scripts": {
     "test": "sh test.sh",
