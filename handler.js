@@ -24,10 +24,8 @@ module.exports.contact = function (e, context, callback) {
         body: 'Redirecting you back to ' + referrer
     };
     var text = JSON.stringify(qs.parse(e.body));
-    text += "Source IP: " + e.requestContext.identity.sourceIp + "\n";
-    text += "User Agent: " + e.requestContext.identity.userAgent + "\n";
-    text += "\n\n\n";
-    text += 'Just testing...';
+    text += "\n Identity: ";
+    text += JSON.stringify(qs.parse(e.requestContext.identity));
 
     var options = {
         from: config.from,
