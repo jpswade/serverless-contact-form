@@ -1,27 +1,27 @@
 "use strict";
 var config = require('./config.json'),
     qs = require('qs'),
-    nodemailer = require('nodemailer'),
+    nodeMailer = require('nodemailer'),
     AWS = require('aws-sdk'),
     sesTransport = require('nodemailer-ses-transport');
 var ses = new AWS.SES();
-var transporter = nodemailer.createTransport(sesTransport({
+var transporter = nodeMailer.createTransport(sesTransport({
     ses: ses
 }));
 
 module.exports.contact = function (e, context, callback) {
-    var referrer = config.website;
+    var redirect = config.redirect;
 
-    const error_response = {
+    const errorResponse = {
         statusCode: 500,
         body: 'Could not send message'
     };
-    const response = {
+    const successResponse = {
         statusCode: 301,
         headers: {
-            'Location': referrer + "?sent=true"
+            'Location': redirect
         },
-        body: 'Redirecting you back to ' + referrer
+        body: 'Redirecting you back to ' + redirect
     };
     var text = JSON.stringify(qs.parse(e.body));
     text += "\n Identity: ";
@@ -36,10 +36,10 @@ module.exports.contact = function (e, context, callback) {
     var on_done = function (error, info) {
         if (error) {
             console.log(error);
-            return callback(null, error_response);
+            return callback(null, errorResponse);
         }
         console.log(info);
-        callback(null, response);
+        callback(null, successResponse);
     };
     var r = transporter.sendMail(options, on_done);
 };
