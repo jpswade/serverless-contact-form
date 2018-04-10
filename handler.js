@@ -17,8 +17,9 @@ module.exports.contact = function (e, context, callback) {
         body: 'Could not send message'
     };
     const successResponse = {
-        statusCode: 301,
+        statusCode: 302,
         headers: {
+            'Access-Control-Allow-Origin': origin,
             'Location': redirect
         },
         body: 'Redirecting you back to ' + redirect
