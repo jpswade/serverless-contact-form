@@ -11,6 +11,7 @@ var transporter = nodeMailer.createTransport(sesTransport({
 
 module.exports.contact = function (e, context, callback) {
     var redirect = config.redirect;
+    var origin = config.origin;
 
     const errorResponse = {
         statusCode: 500,
