@@ -25,9 +25,9 @@ module.exports.contact = function (e, context, callback) {
         },
         body: 'Redirecting you back to ' + redirect
     };
-    var text = JSON.stringify(qs.parse(e.body));
+    var text = JSON.stringify(qs.parse(e.body), null, 2);
     text += "\n Identity: ";
-    text += JSON.stringify(qs.parse(e.requestContext.identity));
+    text += JSON.stringify(qs.parse(e.requestContext.identity), null, 2);
 
     var options = {
         from: config.from,
