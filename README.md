@@ -2,6 +2,14 @@
 
 ...because I didn't want to run an entire server just to send some emails from a simple static website.
 
+## Preface
+
+This a "proof of concept" and probably not considered "ready for prime time" yet.
+
+I want to see if it was possible, the good news is, it is, the bad news is, you'll likely want to handle bots and spam.
+
+Perhaps consider this a place to start.
+
 ## Getting started
 
 ### Installing
