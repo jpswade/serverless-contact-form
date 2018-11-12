@@ -1,4 +1,4 @@
-# Serverless Contact Form (using AWS Lambda) by [James Wade](https://wade.be/)
+# Serverless Contact Form (using AWS Lambda) by [James Wade](https://twitter.com/jpswade)
 
 ...because I didn't want to run an entire server just to send some emails from a simple static website.
 
