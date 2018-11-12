@@ -7,7 +7,6 @@
   "scripts": {
     "test": "sh test.sh",
     "offline": "AWS_REGION=eu-west-1 sls offline start --stage dev",
-    "build": "sh build.sh",
     "deploy": "sls deploy"
   },
   "dependencies": {

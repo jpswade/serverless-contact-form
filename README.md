@@ -8,7 +8,7 @@ This a "proof of concept" and probably not considered "ready for prime time" yet
 
 I want to see if it was possible, the good news is, it is, the bad news is, you'll likely want to handle bots and spam.
 
-Perhaps consider this a place to start.
+Consider this as a place to start.
 
 ## Getting started
 
@@ -28,8 +28,6 @@ Lifecycle scripts included in serverless-contact-form:
 available via `npm run-script`:
   offline
     AWS_REGION=eu-west-1 sls offline start --stage dev
-  build
-    sh build.sh
   deploy
     sls deploy
 ```

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo "@TODO"
+curl http://localhost:3000/contact --data ""
