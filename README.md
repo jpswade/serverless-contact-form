@@ -8,7 +8,7 @@ by [James Wade](https://twitter.com/jpswade)
 
 It's a simple serverless solution that uses AWS Lambda functions to handle POST requests coming from a contact form on your static website (ie: Hosted on S3/Cloudfront).
 
-It uses Amazon kSES to send the emails.
+It uses Amazon SES to send the emails.
 
 It's based on [Lambda-Contact by Jason Pope](https://github.com/cowholio4/lambda-contact-form).
 
