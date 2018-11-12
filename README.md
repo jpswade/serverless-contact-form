@@ -1,4 +1,4 @@
-# Lambda Contact Form (Serverless)
+# Serverless Contact Form (using AWS Lambda) by [James Wade](https://wade.be/)
 
 ...because I didn't want to run an entire server just to send some emails from a simple static website.
 
@@ -25,3 +25,7 @@ available via `npm run-script`:
   deploy
     sls deploy
 ```
+
+## Also see
+
+* [Serverless Framework](https://serverless.com/)
