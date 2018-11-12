@@ -21,7 +21,7 @@ This will install the node modules needed:
 ### Running
 
 ```
-Lifecycle scripts included in lamdba-contact-form:
+Lifecycle scripts included in serverless-contact-form:
   test
     sh test.sh
 

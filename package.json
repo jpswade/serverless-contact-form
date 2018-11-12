@@ -1,8 +1,8 @@
 {
-  "name": "lamdba-contact-form",
+  "name": "serverless-contact-form",
   "repository": {
     "type": "git",
-    "url": "git://bitbucket.org/jpswade/lambda-contact-form.git"
+    "url": "git@github.com:jpswade/serverless-contact-form.git"
   },
   "scripts": {
     "test": "sh test.sh",
