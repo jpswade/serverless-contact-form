@@ -1,0 +1,7 @@
+{
+  "to": "to@example.com",
+  "from": "admin@example.com",
+  "redirect": "https://example.com/thanks.html",
+  "domain": "example.com",
+  "origin": "https://example.com/"
+}
